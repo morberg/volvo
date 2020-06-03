@@ -1,12 +1,6 @@
-# This is a basic workflow to help you get started with Actions
+name: Update odometer.csv nightly
 
-name: Update 
-
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
-  push:
-    branches: [ master ]
   schedule:
     # Run nightly at 02:00 Swedish time, UTC is -2h from Sweden
     - cron: "00 00 * * *"
@@ -36,7 +30,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Update odometer.csv
       run: echo `date +%Y-%m-%dT%H:%M:%S%z`,`voc -u ${{ secrets.username }} -p ${{ secrets.password }} print odometer` >> odometer.csv
-      # TODO: Run nbconvert and update graph
+      # TODO: Run nbconvert and update notebook HTML output
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Update of odometer.csv
