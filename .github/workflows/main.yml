@@ -35,7 +35,7 @@ jobs:
         pip install pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Update odometer.csv
-      run: echo `date +%Y-%m-%dT%H:%M:%S%z`,`voc -u username -p password print odometer` >> odometer.csv
+      run: echo `date +%Y-%m-%dT%H:%M:%S%z`,`voc -u ${{ secrets.username }} -p ${{ secrets.password }} print odometer` >> odometer.csv
       # TODO: Run nbconvert and update graph
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
