@@ -1,0 +1,2 @@
+altair==4.1.0
+volvooncall==0.8.12
