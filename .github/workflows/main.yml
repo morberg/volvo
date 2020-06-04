@@ -1,4 +1,4 @@
-name: Daily update of odometer.csv
+name: Generate volvo.html
 
 on:
   push:
@@ -30,8 +30,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Update odometer.csv
-      run: echo `date -u +%FT%TZ`,`voc -u ${{ secrets.username }} -p ${{ secrets.password }} print odometer` >> odometer.csv
     - name: Generate volvo.html
       run: make html
     - uses: stefanzweifel/git-auto-commit-action@v4
