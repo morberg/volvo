@@ -1,2 +1,4 @@
 altair==4.1.0
 volvooncall==0.8.12
+nbconvert==5.6.1
+jupyter_client==6.1.3
