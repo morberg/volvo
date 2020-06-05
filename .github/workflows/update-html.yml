@@ -30,4 +30,4 @@ jobs:
       run: make html
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit_message: Update of odometer.csv
+        commit_message: Automatic update after commit
