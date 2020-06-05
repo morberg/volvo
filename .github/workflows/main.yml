@@ -1,6 +1,9 @@
 name: Generate volvo.html
 
 on:
+  push:
+    branches: 
+      - master
   schedule:
     # Run nightly at 02:00 Swedish time, UTC is -2h from Sweden
     - cron: "00 00 * * *"
@@ -31,7 +34,7 @@ jobs:
     - name: Update odometer.csv
       run: echo `date -u +%FT%TZ`,`voc -u ${{ secrets.username }} -p ${{ secrets.password }} print odometer` >> odometer.csv
     - name: Generate volvo.html
-    run: make html
+      run: make html
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Update of odometer.csv
