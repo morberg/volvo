@@ -13078,6 +13078,21 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>&lt;ipython-input-1-3ef0a300be26&gt;:10: FutureWarning: The pandas.datetime class is deprecated and will be removed from pandas in a future version. Import from datetime module instead.
+  end_date = pd.datetime.today() + pd.to_timedelta(2, unit=&#34;W&#34;)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 
@@ -13099,12 +13114,12 @@ div#notebook {
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-b5ffd323b08c4d76bd4b59ccc45d6b8c"></div>
+<div id="altair-viz-e0c074a4988047b49db807a4f475b468"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-b5ffd323b08c4d76bd4b59ccc45d6b8c") {
-      outputDiv = document.getElementById("altair-viz-b5ffd323b08c4d76bd4b59ccc45d6b8c");
+    if (outputDiv.id !== "altair-viz-e0c074a4988047b49db807a4f475b468") {
+      outputDiv = document.getElementById("altair-viz-e0c074a4988047b49db807a4f475b468");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -13146,7 +13161,7 @@ div#notebook {
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-1a5d0cd5dda63a51802cb70d05a2670a"}, "mark": "line", "encoding": {"color": {"type": "nominal", "field": "variable"}, "tooltip": [{"type": "temporal", "field": "date"}, {"type": "quantitative", "field": "distance"}, {"type": "nominal", "field": "variable"}], "x": {"type": "temporal", "field": "date", "scale": {"domain": ["2020-06-01", "2020-06-18T22:20:42.496770"]}, "timeUnit": "yearmonthdate"}, "y": {"type": "quantitative", "field": "distance"}}, "selection": {"selector001": {"type": "interval", "bind": "scales", "encodings": ["x", "y"]}}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-1a5d0cd5dda63a51802cb70d05a2670a": [{"date": "2020-06-01T00:00:00+00:00", "variable": "max_distance", "distance": 0.0}, {"date": "2020-06-18T22:20:42.496770+00:00", "variable": "max_distance", "distance": 698630.1369863014}, {"date": "2020-06-01T00:36:40+00:00", "variable": "odometer", "distance": 198041.0}, {"date": "2020-06-02T08:18:45+00:00", "variable": "odometer", "distance": 282735.0}, {"date": "2020-06-04T00:10:14+00:00", "variable": "odometer", "distance": 295098.0}, {"date": "2020-06-04T19:51:00+00:00", "variable": "odometer", "distance": 295098.0}, {"date": "2020-06-04T20:12:49+00:00", "variable": "odometer", "distance": 295098.0}]}}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-d2c4826b687787a24da1a4c8a7ae0be4"}, "mark": "line", "encoding": {"color": {"type": "nominal", "field": "variable"}, "tooltip": [{"type": "temporal", "field": "date"}, {"type": "quantitative", "field": "distance"}, {"type": "nominal", "field": "variable"}], "x": {"type": "temporal", "field": "date", "scale": {"domain": ["2020-06-01", "2020-06-19T08:00:38.591298"]}, "timeUnit": "yearmonthdate"}, "y": {"type": "quantitative", "field": "distance"}}, "selection": {"selector001": {"type": "interval", "bind": "scales", "encodings": ["x", "y"]}}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-d2c4826b687787a24da1a4c8a7ae0be4": [{"date": "2020-06-01T00:00:00+00:00", "variable": "max_distance", "distance": 0.0}, {"date": "2020-06-19T08:00:38.591298+00:00", "variable": "max_distance", "distance": 739726.0273972603}, {"date": "2020-06-01T00:36:40+00:00", "variable": "odometer", "distance": 198041.0}, {"date": "2020-06-02T08:18:45+00:00", "variable": "odometer", "distance": 282735.0}, {"date": "2020-06-04T00:10:14+00:00", "variable": "odometer", "distance": 295098.0}, {"date": "2020-06-05T00:01:48+00:00", "variable": "odometer", "distance": 495098.0}]}}, {"mode": "vega-lite"});
 </script>
 </div>
 
@@ -13163,9 +13178,18 @@ div#notebook {
 
 <div class="output_area">
 
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>&lt;ipython-input-4-167d998bc77a&gt;:1: FutureWarning: The pandas.datetime class is deprecated and will be removed from pandas in a future version. Import from datetime module instead.
+  md(f&#34;Uppdaterad {pd.datetime.today().strftime(&#39;%Y-%m-%d&#39;)}&#34;)
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
 
 <div class="output_markdown rendered_html output_subarea output_execute_result">
-<p>Uppdaterad 2020-06-04</p>
+<p>Uppdaterad 2020-06-05</p>
 
 </div>
 
